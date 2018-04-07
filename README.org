@@ -1,7 +1,5 @@
 #+TITLE: ActiveMQ with jmx_prometheus_javaagent
 
-* ActiveMQ with jmx_prometheus_javaagent
-
 Docker image based on [[https://github.com/rmohr/docker-activemq][rmohr/activemq]] with [[https://github.com/prometheus/jmx_exporter][JMX Exporter]] included.
 Allows easy integration of ActiveMQ into the [[https://prometheus.io][Prometheus]] monitoring
 system.
