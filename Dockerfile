@@ -19,7 +19,7 @@ ENV AGENT_OPTS="-javaagent:/$AGENT=8080:/config.yaml"
 
 ADD https://repo1.maven.org/maven2/io/prometheus/jmx/$AGENT_BASE/$AGENT_VERSION/$AGENT /
 USER root
-RUN if [ "$AGENT_SHA512" != "$(cd / && sha512sum $AGENT | awk '{print($1)}')" ]; then \
+RUN chmod 0644 /$AGENT && if [ "$AGENT_SHA512" != "$(cd / && sha512sum $AGENT | awk '{print($1)}')" ]; then \
         echo "Agent sha512 value doesn't match! exiting."  && exit 1; \
     fi
 COPY $AGENT_CONFIG /
