@@ -15,9 +15,8 @@ The version of ActiveMQ is hard coded into the `Dockerfile`.
 
 An automated build is configured via docker hub. To build the image manually and push it:
 
-    docker build --rm -t activemq-prometheus: .
-    docker tag activemq-prometheus:5.15.3 bwolf/activemq-prometheus:5.15.3
+    docker build --rm -t bwolf/activemq-prometheus:latest -t bwolf/activemq-prometheus:5.15.6 .
     docker login # login with username password
-    docker push bwolf/activemq-prometheus:5.15.3
+    docker push bwolf/activemq-prometheus:5.15.6
 
 The image `bwolf/activemq-prometheus` is located at [docker hub](https://hub.docker.com/r/bwolf/activemq-prometheus/).

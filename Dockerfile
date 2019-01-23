@@ -3,7 +3,7 @@
 # See https://github.com/rmohr/docker-activemq.
 # See https://github.com/prometheus/jmx_exporter.
 
-FROM rmohr/activemq:5.15.3
+FROM rmohr/activemq:5.15.6
 
 MAINTAINER Marcus Geiger <marcus.geiger@spqr-info.de>
 
