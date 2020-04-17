@@ -3,9 +3,7 @@
 # See https://github.com/rmohr/docker-activemq.
 # See https://github.com/prometheus/jmx_exporter.
 
-FROM rmohr/activemq:5.15.6
-
-MAINTAINER Marcus Geiger <marcus.geiger@spqr-info.de>
+FROM rmohr/activemq:5.15.9
 
 ENV ACTIVEMQ_TCP=61616 ACTIVEMQ_AMQP=5672 ACTIVEMQ_STOMP=61613 ACTIVEMQ_MQTT=1883 ACTIVEMQ_WS=61614 ACTIVEMQ_UI=8161
 ENV ACTIVEMQ_HOME /opt/activemq
