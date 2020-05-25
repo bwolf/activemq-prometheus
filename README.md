@@ -11,7 +11,7 @@ The source repository of the image is on [github](https://github.com/bwolf/activ
 The version of ActiveMQ is hard coded into the `Dockerfile`.
 
 ## Container Images
-Images can be found at [docker hub](https://hub.docker.com/repository/docker/bwolf/activemq-prometheus).
+Images can be found at [docker hub](https://hub.docker.com/r/bwolf/activemq-prometheus).
 
 
 ## Building
